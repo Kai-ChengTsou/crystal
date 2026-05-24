@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6eee8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Lunette" />
+    <title>分析結果 | Lunette</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="styles.css?v=36" />
+  </head>
+  <body>
+    <div class="phone-frame">
+      <div class="app-shell form-shell">
+        <header class="flow-topbar" aria-label="Analysis result">
+          <a class="back-button" href="style.html" aria-label="Back to style preference">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </a>
+          <h1>個人命定水晶</h1>
+          <span>STEP 5 / 5</span>
+        </header>
+
+        <main class="result-main">
+          <nav class="stepper form-stepper" aria-label="Analysis steps">
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </span>
+              <p>1 認識氣質</p>
+            </div>
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 12v10H4V12" />
+                  <path d="M2 7h20v5H2z" />
+                  <path d="M12 22V7" />
+                </svg>
+              </span>
+              <p>2 基本資訊</p>
+            </div>
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" />
+                </svg>
+              </span>
+              <p>3 最近的你</p>
+            </div>
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 3h12l4 6-10 12L2 9l4-6Z" />
+                  <path d="M2 9h20" />
+                </svg>
+              </span>
+              <p>4 風格偏好</p>
+            </div>
+            <div class="step is-active">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 2 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" />
+                </svg>
+              </span>
+              <p>5 分析結果</p>
+            </div>
+          </nav>
+
+          <section class="form-title result-title" aria-labelledby="result-title">
+            <h2 id="result-title"><span>✦</span> AI 分析結果 <span>✦</span></h2>
+            <p>專屬於你的命定水晶與能量建議</p>
+          </section>
+
+          <section class="result-keywords">
+            <small>你的命定能量關鍵詞</small>
+            <strong data-result-keywords>療癒平衡 × 提升能量 × 穩定情緒</strong>
+            <p data-result-summary>正在讀取你的專屬分析...</p>
+          </section>
+
+          <section class="bracelet-result-card">
+            <h3>✦ 你的命定水晶手鍊</h3>
+            <div class="bracelet-result-layout">
+              <img data-bracelet-image src="" alt="AI generated crystal bracelet" />
+              <div class="bracelet-crystals" data-bracelet-crystals></div>
+            </div>
+            <p data-wear-note>建議佩戴方式會依照你的能量分析生成。</p>
+          </section>
+
+          <section class="result-note">
+            <strong>✦ 小提醒</strong>
+            <span>定期淨化水晶能量，搭配冥想與深呼吸，能讓能量效果更好喔！</span>
+          </section>
+
+          <a class="next-button result-report" href="report.html">查看完整能量報告</a>
+          <a class="reset-analysis-button" href="index.html" data-reset-flow>重新分析</a>
+        </main>
+      </div>
+    </div>
+    <script src="app.js?v=36"></script>
+  </body>
+</html>

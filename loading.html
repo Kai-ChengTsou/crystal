@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6eee8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Lunette" />
+    <title>AI 分析中 | Lunette</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="styles.css?v=36" />
+  </head>
+  <body>
+    <div class="phone-frame">
+      <div class="app-shell loading-shell" data-loading-page>
+        <header class="flow-topbar" aria-label="Analysis loading">
+          <a class="back-button" href="style.html" aria-label="Back to style preference">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </a>
+          <h1>個人命定水晶</h1>
+          <span>STEP 5 / 5</span>
+        </header>
+
+        <main class="loading-main">
+          <nav class="stepper form-stepper" aria-label="Analysis steps">
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </span>
+              <p>1 認識氣質</p>
+            </div>
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 12v10H4V12" />
+                  <path d="M2 7h20v5H2z" />
+                  <path d="M12 22V7" />
+                </svg>
+              </span>
+              <p>2 基本資訊</p>
+            </div>
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" />
+                </svg>
+              </span>
+              <p>3 最近的你</p>
+            </div>
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 3h12l4 6-10 12L2 9l4-6Z" />
+                  <path d="M2 9h20" />
+                </svg>
+              </span>
+              <p>4 風格偏好</p>
+            </div>
+            <div class="step is-active">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 2 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" />
+                </svg>
+              </span>
+              <p>5 分析結果</p>
+            </div>
+          </nav>
+
+          <section class="loading-title">
+            <h2><span>✦</span> AI 正在為你分析中... <span>✦</span></h2>
+            <p>請稍等片刻，好水晶正在為你現身</p>
+          </section>
+
+          <section class="loading-stage" aria-live="polite">
+            <div class="loading-ring" data-loading-ring>
+              <div>
+                <strong data-loading-percent>12%</strong>
+                <span>分析進度</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="loading-status-card">
+            <strong>✦</strong>
+            <p data-loading-status>AI 正在整合你的所有資訊與能量訊號...</p>
+          </section>
+
+          <section class="loading-steps" aria-label="Loading progress steps">
+            <div class="loading-step is-active" data-loading-step>
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v3" />
+                  <path d="M12 18v3" />
+                  <path d="m4.9 4.9 2.1 2.1" />
+                  <path d="m17 17 2.1 2.1" />
+                  <path d="M3 12h3" />
+                  <path d="M18 12h3" />
+                  <path d="m4.9 19.1 2.1-2.1" />
+                  <path d="m17 7 2.1-2.1" />
+                </svg>
+              </span>
+              <b>氣質分析</b>
+              <em>進行中</em>
+            </div>
+            <div class="loading-step" data-loading-step>
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 12v10H4V12" />
+                  <path d="M2 7h20v5H2z" />
+                  <path d="M12 22V7" />
+                </svg>
+              </span>
+              <b>能量匹配中</b>
+              <em>等待中</em>
+            </div>
+            <div class="loading-step" data-loading-step>
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+                  <path d="M14 2v6h6" />
+                  <path d="M8 13h8" />
+                  <path d="M8 17h5" />
+                </svg>
+              </span>
+              <b>生成推薦</b>
+              <em>等待中</em>
+            </div>
+          </section>
+
+          <p class="loading-footer">♡ 放鬆心情，讓 AI 為你找到最適合的命定水晶</p>
+        </main>
+      </div>
+    </div>
+    <script src="app.js?v=36"></script>
+  </body>
+</html>

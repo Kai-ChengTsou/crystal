@@ -1,0 +1,115 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6eee8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Lunette" />
+    <title>個人命定水晶 | Lunette</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="styles.css?v=36" />
+  </head>
+  <body>
+    <div class="phone-frame">
+      <div class="app-shell personal-shell">
+        <header class="flow-topbar" aria-label="Personal crystal analysis">
+          <a class="back-button" href="index.html" aria-label="Back to home">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </a>
+          <h1>個人命定水晶</h1>
+          <span>STEP 1 / 5</span>
+        </header>
+
+        <main class="personal-main">
+          <nav class="stepper" aria-label="Analysis steps">
+            <div class="step is-active">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </span>
+              <p>1 認識氣質</p>
+            </div>
+            <div class="step">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 12v10H4V12" />
+                  <path d="M2 7h20v5H2z" />
+                  <path d="M12 22V7" />
+                </svg>
+              </span>
+              <p>2 基本資訊</p>
+            </div>
+            <div class="step">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" />
+                </svg>
+              </span>
+              <p>3 最近的你</p>
+            </div>
+            <div class="step">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 3h12l4 6-10 12L2 9l4-6Z" />
+                  <path d="M2 9h20" />
+                </svg>
+              </span>
+              <p>4 風格偏好</p>
+            </div>
+            <div class="step">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 2 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" />
+                </svg>
+              </span>
+              <p>5 分析結果</p>
+            </div>
+          </nav>
+
+          <section class="personal-hero" aria-labelledby="flow-title">
+            <div class="flow-copy">
+              <h2 id="flow-title"><span>✦</span> 認識你的氣質 <span>✦</span></h2>
+              <p>上傳照片讓 AI 分析你的氣質與氣場</p>
+            </div>
+          </section>
+
+          <section class="upload-card" aria-labelledby="upload-title">
+            <h2 id="upload-title">上傳你的清晰正面照</h2>
+            <ul>
+              <li>請保持臉部清晰、未戴墨鏡或口罩</li>
+              <li>自然光線下拍攝效果更佳</li>
+              <li>建議從頭頂到下巴完整入鏡</li>
+            </ul>
+            <label class="upload-zone">
+              <input class="photo-input" type="file" accept="image/*" />
+              <span class="camera-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14.5 4 16 7h3a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3l1.5-3h5Z" />
+                  <circle cx="12" cy="13" r="3.5" />
+                </svg>
+              </span>
+              <strong>點擊上傳照片</strong>
+              <em>或 拖曳照片至此</em>
+            </label>
+          </section>
+
+          <p class="upload-warning" role="alert" aria-live="polite">請先上傳一張清晰正面照</p>
+          <button class="next-button upload-next" type="button">
+            下一步
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m12 2 1.7 5.1L19 9l-5.3 1.9L12 16l-1.7-5.1L5 9l5.3-1.9L12 2Z" />
+            </svg>
+          </button>
+        </main>
+      </div>
+    </div>
+    <script src="app.js?v=36"></script>
+  </body>
+</html>

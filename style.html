@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6eee8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Lunette" />
+    <title>風格偏好 | Lunette</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="styles.css?v=36" />
+  </head>
+  <body>
+    <div class="phone-frame">
+      <div class="app-shell form-shell">
+        <header class="flow-topbar" aria-label="Style preference">
+          <a class="back-button" href="recent.html" aria-label="Back to recent state">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </a>
+          <h1>個人命定水晶</h1>
+          <span>STEP 4 / 5</span>
+        </header>
+
+        <main class="style-main">
+          <nav class="stepper form-stepper" aria-label="Analysis steps">
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </span>
+              <p>1 認識氣質</p>
+            </div>
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 12v10H4V12" />
+                  <path d="M2 7h20v5H2z" />
+                  <path d="M12 22V7" />
+                </svg>
+              </span>
+              <p>2 基本資訊</p>
+            </div>
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" />
+                </svg>
+              </span>
+              <p>3 最近的你</p>
+            </div>
+            <div class="step is-active">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 3h12l4 6-10 12L2 9l4-6Z" />
+                  <path d="M2 9h20" />
+                </svg>
+              </span>
+              <p>4 風格偏好</p>
+            </div>
+            <div class="step">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 2 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" />
+                </svg>
+              </span>
+              <p>5 分析結果</p>
+            </div>
+          </nav>
+
+          <section class="form-title style-title" aria-labelledby="style-title">
+            <h2 id="style-title"><span>✦</span> 你的風格偏好 <span>✦</span></h2>
+            <p>選擇你喜歡的氛圍與色系，讓推薦更符合你的喜好</p>
+          </section>
+
+          <section class="style-grid" data-choice-mode="single" aria-label="Style preference options">
+            <button class="style-card" type="button">
+              <img src="assets/style-milk-tea.jpg" alt="" />
+              <span>
+                <strong>溫柔奶茶感</strong>
+                <em>柔和舒服．療癒安心</em>
+              </span>
+              <i aria-hidden="true"></i>
+            </button>
+            <button class="style-card" type="button">
+              <img src="assets/style-cool-luxury.jpg" alt="" />
+              <span>
+                <strong>高冷精品感</strong>
+                <em>簡約俐落．高級質感</em>
+              </span>
+              <i aria-hidden="true"></i>
+            </button>
+            <button class="style-card" type="button">
+              <img src="assets/style-rose.jpg" alt="" />
+              <span>
+                <strong>玫瑰粉氣質</strong>
+                <em>浪漫優雅．溫柔氣場</em>
+              </span>
+              <i aria-hidden="true"></i>
+            </button>
+            <button class="style-card" type="button">
+              <img src="assets/style-mist-blue.jpg" alt="" />
+              <span>
+                <strong>霧藍透明感</strong>
+                <em>清新舒緩．純淨透明</em>
+              </span>
+              <i aria-hidden="true"></i>
+            </button>
+            <button class="style-card" type="button">
+              <img src="assets/style-dark.jpg" alt="" />
+              <span>
+                <strong>暗黑神秘感</strong>
+                <em>深邃個性．神秘魅力</em>
+              </span>
+              <i aria-hidden="true"></i>
+            </button>
+            <button class="style-card is-selected" type="button">
+              <img src="assets/style-minimal.jpg" alt="" />
+              <span>
+                <strong>簡約高級感</strong>
+                <em>低調內斂．經典耐看</em>
+              </span>
+              <i aria-hidden="true"></i>
+            </button>
+          </section>
+
+          <aside class="style-reminder">
+            <strong>✦ 小提醒</strong>
+            <span>選擇你最有感覺的 1 種風格，AI 會依照你的偏好生成專屬能量分析</span>
+          </aside>
+
+          <button class="next-button style-next" type="button" data-finish-flow>
+            下一步
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m12 2 1.7 5.1L19 9l-5.3 1.9L12 16l-1.7-5.1L5 9l5.3-1.9L12 2Z" />
+            </svg>
+          </button>
+        </main>
+      </div>
+    </div>
+    <script src="app.js?v=36"></script>
+  </body>
+</html>

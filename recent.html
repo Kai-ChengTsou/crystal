@@ -1,0 +1,172 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6eee8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Lunette" />
+    <title>最近的你 | Lunette</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="styles.css?v=36" />
+  </head>
+  <body>
+    <div class="phone-frame">
+      <div class="app-shell form-shell">
+        <header class="flow-topbar" aria-label="Recent state">
+          <a class="back-button" href="basic.html" aria-label="Back to basic information">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </a>
+          <h1>個人命定水晶</h1>
+          <span>STEP 3 / 5</span>
+        </header>
+
+        <main class="recent-main">
+          <nav class="stepper form-stepper" aria-label="Analysis steps">
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </span>
+              <p>1 認識氣質</p>
+            </div>
+            <div class="step is-done">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 12v10H4V12" />
+                  <path d="M2 7h20v5H2z" />
+                  <path d="M12 22V7" />
+                </svg>
+              </span>
+              <p>2 基本資訊</p>
+            </div>
+            <div class="step is-active">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" />
+                </svg>
+              </span>
+              <p>3 最近的你</p>
+            </div>
+            <div class="step">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 3h12l4 6-10 12L2 9l4-6Z" />
+                  <path d="M2 9h20" />
+                </svg>
+              </span>
+              <p>4 風格偏好</p>
+            </div>
+            <div class="step">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 2 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" />
+                </svg>
+              </span>
+              <p>5 分析結果</p>
+            </div>
+          </nav>
+
+          <section class="form-title recent-title" aria-labelledby="recent-title">
+            <h2 id="recent-title"><span>✦</span> 選擇最貼近你的狀態 <span>✦</span></h2>
+            <p>最近一段時間，你的生活或心境比較接近哪一種狀態呢？</p>
+          </section>
+
+          <section class="state-grid" data-choice-mode="single" aria-label="Recent state options">
+            <button class="state-card" style="--state-image: url('assets/recent-calm.jpg'); --state-selected-image: url('assets/recent-calm-selected.jpg')" type="button">
+              <span class="state-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21v-8" />
+                  <path d="M12 13C7.5 13 5 10.4 4 5c5.4 1 8 3.5 8 8Z" />
+                  <path d="M12 13c4.5 0 7-2.6 8-8-5.4 1-8 3.5-8 8Z" />
+                </svg>
+              </span>
+              <strong>平靜穩定</strong>
+              <em>心情平和，想維持穩定流動</em>
+              <span class="state-check" aria-hidden="true"></span>
+            </button>
+            <button class="state-card" style="--state-image: url('assets/recent-lost.jpg'); --state-selected-image: url('assets/recent-lost-selected.jpg')" type="button">
+              <span class="state-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 18h10.3a4.2 4.2 0 0 0 .5-8.4 6 6 0 0 0-11.3-1.7A5.1 5.1 0 0 0 7 18Z" />
+                </svg>
+              </span>
+              <strong>有點迷惘</strong>
+              <em>正在尋找方向，需要釐清思緒</em>
+              <span class="state-check" aria-hidden="true"></span>
+            </button>
+            <button class="state-card is-selected" style="--state-image: url('assets/recent-change.jpg'); --state-selected-image: url('assets/recent-change-selected.jpg')" type="button">
+              <span class="state-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 3 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" />
+                  <path d="M19 3v4" />
+                  <path d="M21 5h-4" />
+                </svg>
+              </span>
+              <strong>想要改變</strong>
+              <em>想突破現狀，迎接新的可能</em>
+              <span class="state-check" aria-hidden="true"></span>
+            </button>
+            <button class="state-card" style="--state-image: url('assets/recent-emotional.jpg'); --state-selected-image: url('assets/recent-emotional-selected.jpg')" type="button">
+              <span class="state-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" />
+                </svg>
+              </span>
+              <strong>情緒起伏較大</strong>
+              <em>感到敏感焦慮，想回到平衡</em>
+              <span class="state-check" aria-hidden="true"></span>
+            </button>
+            <button class="state-card" style="--state-image: url('assets/recent-energy.jpg'); --state-selected-image: url('assets/recent-energy-selected.jpg')" type="button">
+              <span class="state-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.9 4.9 1.4 1.4" />
+                  <path d="m17.7 17.7 1.4 1.4" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m4.9 19.1 1.4-1.4" />
+                  <path d="m17.7 6.3 1.4-1.4" />
+                </svg>
+              </span>
+              <strong>充滿能量</strong>
+              <em>動力充足，想積極實現目標</em>
+              <span class="state-check" aria-hidden="true"></span>
+            </button>
+            <button class="state-card" style="--state-image: url('assets/recent-healing.jpg'); --state-selected-image: url('assets/recent-healing-selected.jpg')" type="button">
+              <span class="state-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z" />
+                </svg>
+              </span>
+              <strong>想要療癒</strong>
+              <em>身心疲憊，想好好照顧自己</em>
+              <span class="state-check" aria-hidden="true"></span>
+            </button>
+          </section>
+
+          <aside class="state-reminder">
+            <strong>✦ 小提醒</strong>
+            <span>如有多種感受，可以選擇最主要的一項，讓 AI 更精準分析你的目前狀態喔！</span>
+          </aside>
+
+          <button class="next-button recent-next" type="button" data-next="style.html">
+            下一步
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m12 2 1.7 5.1L19 9l-5.3 1.9L12 16l-1.7-5.1L5 9l5.3-1.9L12 2Z" />
+            </svg>
+          </button>
+        </main>
+      </div>
+    </div>
+    <script src="app.js?v=36"></script>
+  </body>
+</html>

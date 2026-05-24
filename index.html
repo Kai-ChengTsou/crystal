@@ -1,0 +1,209 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Lunette AI Crystal Lab helps you discover personal crystal recommendations through a beautiful responsive web experience."
+    />
+    <meta name="theme-color" content="#f6eee8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Lunette" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Lunette AI Crystal Lab</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="styles.css?v=36" />
+  </head>
+  <body>
+    <div class="phone-frame">
+      <div class="app-shell">
+        <header class="topbar" aria-label="Main navigation">
+          <button class="menu-button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a class="brand" href="#" aria-label="Lunette home">
+            <span>LUNETTE</span>
+            <small>AI CRYSTAL LAB</small>
+          </a>
+          <button class="notify-button" aria-label="Notifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9" />
+              <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+            </svg>
+            <i></i>
+          </button>
+        </header>
+
+        <main>
+          <section class="hero" aria-labelledby="hero-title">
+            <!-- Replace this URL later with your uploaded hero image. -->
+            <div class="hero-media" role="img" aria-label="Soft crystal and light background"></div>
+            <div class="hero-content">
+              <h1 id="hero-title">不是每種水晶，<br />都適合每個人。</h1>
+              <p>AI 將根據你的氣質與能量，<br />找到真正適合你的命定水晶。</p>
+              <div class="hero-actions">
+                <button class="primary-action" type="button">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m12 2 1.7 5.1L19 9l-5.3 1.9L12 16l-1.7-5.1L5 9l5.3-1.9L12 2Z" />
+                  </svg>
+                  開始分析
+                </button>
+                <button class="secondary-action" type="button">
+                  Explore Your Aura
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m12 2 1.4 4.2L18 8l-4.6 1.8L12 14l-1.4-4.2L6 8l4.6-1.8L12 2Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="explore-section" id="explore" aria-labelledby="explore-title">
+            <div class="section-heading">
+              <h2 id="explore-title">你今天想探索哪種能量？</h2>
+              <p>選擇你的需求，開啟專屬的能量旅程</p>
+            </div>
+
+            <div class="category-grid">
+              <article class="category-card card-warm personal-card" data-link="personal.html" tabindex="0" role="link" aria-label="Open personal crystal analysis">
+                <!-- Replace card image URLs with your uploaded files when ready. -->
+                <img
+                  src="assets/card-personal-crystal.png"
+                  alt="Clear quartz crystal on pale silk"
+                />
+                <span class="card-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </span>
+                <div class="card-content">
+                  <h3>個人命定水晶</h3>
+                  <p>了解你的氣質與能量，找到專屬於你的命定水晶</p>
+                </div>
+                <button aria-label="Open personal crystal path" data-link="personal.html">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </article>
+
+              <article class="category-card card-blue">
+                <img
+                  src="assets/card-emotion-crystal.png"
+                  alt="Blue crystal and candle in calm light"
+                />
+                <span class="card-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10a8 8 0 0 0-16 0c0 6 8 10 8 10Z" />
+                    <path d="M8 12c1.5-3 6.5-3 8 0" />
+                  </svg>
+                </span>
+                <div class="card-content">
+                  <h3>情緒療癒水晶</h3>
+                  <p>舒緩情緒、療癒內在，讓能量回歸平衡與穩定</p>
+                </div>
+                <button aria-label="Open emotional healing path">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </article>
+
+              <article class="category-card card-rose">
+                <img
+                  src="assets/card-love-crystal.png"
+                  alt="Rose quartz crystal in soft pink light"
+                />
+                <span class="card-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
+                  </svg>
+                </span>
+                <div class="card-content">
+                  <h3>愛情・情侶水晶</h3>
+                  <p>提升愛的能量頻率，吸引美好關係與心動連結</p>
+                </div>
+                <button aria-label="Open love crystal path">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </article>
+
+              <article class="category-card card-dark">
+                <img
+                  src="assets/card-career-crystal.png"
+                  alt="Smoky quartz crystal on a dark surface"
+                />
+                <span class="card-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m3 17 6-6 4 4 8-8" />
+                    <path d="M14 7h7v7" />
+                  </svg>
+                </span>
+                <div class="card-content">
+                  <h3>事業・財運水晶</h3>
+                  <p>增強專注與行動力，吸引財富與成功能量</p>
+                </div>
+                <button aria-label="Open career and wealth path">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </article>
+            </div>
+
+            <section class="benefit-strip" id="aura" aria-label="Lunette benefits">
+              <div>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 2 2.2 6.3L21 11l-6.8 2.7L12 20l-2.2-6.3L3 11l6.8-2.7L12 2Z" />
+                </svg>
+                <strong>AI 個性分析</strong>
+                <span>精準了解你的能量</span>
+              </div>
+              <div>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <strong>專屬水晶推薦</strong>
+                <span>為你量身打造</span>
+              </div>
+              <div>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 3h12l4 6-10 12L2 9l4-6Z" />
+                  <path d="M2 9h20" />
+                  <path d="m12 21 4-12-4-6-4 6 4 12Z" />
+                </svg>
+                <strong>高品質天然水晶</strong>
+                <span>嚴選能量好物</span>
+              </div>
+              <div>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 12v10H4V12" />
+                  <path d="M2 7h20v5H2z" />
+                  <path d="M12 22V7" />
+                  <path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7Z" />
+                  <path d="M12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7Z" />
+                </svg>
+                <strong>精美包裝配送</strong>
+                <span>送禮自用都適合</span>
+              </div>
+            </section>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="app.js?v=36"></script>
+  </body>
+</html>
